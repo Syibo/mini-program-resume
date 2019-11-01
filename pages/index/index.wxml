@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title" style='padding-top:{{ btuBottom }}'>
+    <image src="https://www.17sucai.com/preview/2/2017-03-08/moban1922/img/uploads/brand/logo.svg"></image>
+  </view>
+
+  <view class="con" style='margin-top:{{ statusBarHeight }}'>
+    <view class="top">
+      <image src="https://www.17sucai.com/preview/2/2017-03-08/moban1922/img/uploads/avatar/avatar-42x42.png"></image>
+      <image src="https://www.17sucai.com/preview/2/2017-03-08/moban1922/img/uploads/avatar/avatar-42x42.png"></image>
+      <image src="https://www.17sucai.com/preview/2/2017-03-08/moban1922/img/uploads/avatar/avatar-42x42.png"></image>
+      <image src="https://www.17sucai.com/preview/2/2017-03-08/moban1922/img/uploads/avatar/avatar-42x42.png"></image>
+      <image src="https://www.17sucai.com/preview/2/2017-03-08/moban1922/img/uploads/avatar/avatar-42x42.png"></image>
+    </view>
+
+    <view class="mid">
+      <image src="https://www.17sucai.com/preview/2/2017-03-08/moban1922/img/uploads/avatar/avatar-42x42.png"></image>
+      <view class="name">Ola Lowe</view>
+      <view class="dist">UI designers | Web programmer</view>
+      <view class="info">
+        <image src="https://i.52112.com/icon/jpg/256/20190702/46504/2157349.jpg"></image>
+        <image src="https://i.52112.com/icon/jpg/256/20190702/46504/2157349.jpg"></image>
+        <image src="https://i.52112.com/icon/jpg/256/20190702/46504/2157349.jpg"></image>
+        <image src="https://i.52112.com/icon/jpg/256/20190702/46504/2157349.jpg"></image>
+        <image src="https://i.52112.com/icon/jpg/256/20190702/46504/2157349.jpg"></image>
+      </view>
+    </view>
+  </view>
+</view>
