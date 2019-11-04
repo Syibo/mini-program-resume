@@ -6,24 +6,42 @@
 
   <view class="con" style='margin-top:{{ statusBarHeight }}'>
     <view class="top">
-      <image src="https://www.17sucai.com/preview/2/2017-03-08/moban1922/img/uploads/avatar/avatar-42x42.png"></image>
-      <image src="https://www.17sucai.com/preview/2/2017-03-08/moban1922/img/uploads/avatar/avatar-42x42.png"></image>
-      <image src="https://www.17sucai.com/preview/2/2017-03-08/moban1922/img/uploads/avatar/avatar-42x42.png"></image>
-      <image src="https://www.17sucai.com/preview/2/2017-03-08/moban1922/img/uploads/avatar/avatar-42x42.png"></image>
-      <image src="https://www.17sucai.com/preview/2/2017-03-08/moban1922/img/uploads/avatar/avatar-42x42.png"></image>
+      <image style="border-radius: 84rpx;" src="../../images/index/headimg.jpg"></image>
+      <image src="../../images/index/img.png"></image>
+      <image style="width: 72rpx;height: 72rpx;" src="../../images/index/music.png"></image>
+      <image src="../../images/index/movie.png"></image>
+      <image src="../../images/index/riji.png"></image>
     </view>
 
     <view class="mid">
-      <image src="https://www.17sucai.com/preview/2/2017-03-08/moban1922/img/uploads/avatar/avatar-42x42.png"></image>
-      <view class="name">Ola Lowe</view>
+      <image src="../../images/index/headimg.jpg"></image>
+      <view class="name">Bob shen</view>
       <view class="dist">UI designers | Web programmer</view>
       <view class="info">
-        <image src="https://i.52112.com/icon/jpg/256/20190702/46504/2157349.jpg"></image>
-        <image src="https://i.52112.com/icon/jpg/256/20190702/46504/2157349.jpg"></image>
-        <image src="https://i.52112.com/icon/jpg/256/20190702/46504/2157349.jpg"></image>
-        <image src="https://i.52112.com/icon/jpg/256/20190702/46504/2157349.jpg"></image>
-        <image src="https://i.52112.com/icon/jpg/256/20190702/46504/2157349.jpg"></image>
+        <image src="../../images/index/wechat.png"></image>
+        <image src="../../images/index/phone.png"></image>
+        <image src="../../images/index/qq.png"></image>
+        <image src="../../images/index/github.png"></image>
+        <image src="../../images/index/weibo.png"></image>
       </view>
     </view>
+
+    <view class="my">
+      <view class="about"> About Me </view>
+      <view class="hello"> Helo, I’m Bob shen! </view>
+      <view class="introduce"> 
+                        Logo or your Company Name, unless of course you are Microsoft or the Yellow Pages online directorye core of
+                        your marketing, the central theme around your products and services.
+                        Your brand is not your Logo or your Company Name, unless of course you are Microsoft or the Yellow Pages
+                        online directory. </view>
+      <view class="signature">
+        <image src="https://www.17sucai.com/preview/2/2017-03-08/moban1922/img/uploads/signature.png"></image>
+      </view>
+      <view class="line"></view>
+
+      <view class="personal">personal information</view>
+      
+    </view>
+
   </view>
 </view>

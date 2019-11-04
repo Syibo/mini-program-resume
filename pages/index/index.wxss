@@ -42,6 +42,7 @@
 .mid image {
   width: 380rpx;
   height: 380rpx;
+  border-radius: 380rpx;
 }
 .name {
   font-size: 52rpx;
@@ -62,6 +63,49 @@
   padding: 0 100rpx;
 }
 .info image {
-  width: 40rpx;
-  height: 40rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+.my {
+  padding: 40rpx;
+}
+.my .about {
+  text-transform: uppercase;
+  font-size: 60rpx;
+  font-weight: 700;
+  color: #010101;
+  padding: 50rpx 0;
+}
+.my .hello {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #010101;
+  margin-bottom: 9rpx;
+}
+.my .introduce {
+  font-size: 32rpx;
+  color: #010101;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 52rpx;
+}
+.my .signature {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.my .signature image {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 50rpx 0;
+}
+.line {
+  width: 670rpx;
+  height: 1rpx;
+  background-color: #e6e6e6;
+  margin: 0 auto;
+}
+.personal {
+  color: #757575;
+  font-weight: 400;
+  font-size: 32rpx;
+  padding: 50rpx 0;
 }
