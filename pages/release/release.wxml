@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="title" style='padding-top:{{ btuBottom }}'>
+    <image bindtap="goBack" src="../../images/index/zhiwen.png"></image>
+    <image bindtap="goBack" class="nameimg" src="../../images/index/1429.png"></image>
+  </view>
+
+  <view class="content" style='margin-top:{{ statusBarHeight }}'>
+
+    <form>
+      <textarea show-confirm-bar="{{ showConfirmBar }}" bindinput="bindinput" value='{{ value }}' placeholder="这一刻的想法..." class='text-cla' bindfocus="bindfocus" bindblur="bindblur" />
+    </form>
+    
+    <view style="padding-left: 10rpx;">
+      <l-image-picker size="3" l-item-class="item" size-type="compressed" count="1" bind:linremove="onRemoveTap" bind:linchange="onChangeTap" />
+    </view>
+
+    <view bindtap="send" class="send" style='bottom:{{ bottom }}'>
+      <button size="mini" type="primary">发送</button>
+    </view>
+  </view>
+</view>

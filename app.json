@@ -1,7 +1,15 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/diary/diary",
+    "pages/music/music",
+    "pages/message/message",
+    "pages/release/release"
+  ],
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
   ],
   "window": {
     "backgroundTextStyle": "light",

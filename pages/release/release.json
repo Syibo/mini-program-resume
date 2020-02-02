@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "l-image-picker": "../../components/image-picker/index"
+  }
+}

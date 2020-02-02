@@ -1,7 +1,6 @@
 //app.js
 App({
   onLaunch: function () {
-    console.log(wx.getSystemInfoSync()['statusBarHeight'])
     this.globalData.statusBarHeight = wx.getSystemInfoSync()['statusBarHeight']
     // 展示本地存储能力
     // var logs = wx.getStorageSync('logs') || []
@@ -36,7 +35,7 @@ App({
     // })
   },
   globalData: {
-    userInfo: null,
+    openid: '',
     statusBarHeight: 0
   }
 })

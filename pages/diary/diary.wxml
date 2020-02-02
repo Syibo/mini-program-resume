@@ -1,0 +1,42 @@
+<view class="container">
+  <view class="title" style='padding-top:{{ btuBottom }}'>
+    <image bindtap="goBack" src="../../images/index/zhiwen.png"></image>
+    <image bindtap="goBack" class="nameimg" src="../../images/index/1429.png"></image>
+  </view>
+
+  <view class="content" style='margin-top:{{ statusBarHeight }}'>
+    <view class="diary_item" wx:for="{{ diaryData }}" wx:key="_id">
+      <image bindtap="previewImage" data-img="{{ item.img }}" src="{{ item.img }}"></image>
+      <view class="date_item">晴 | {{ item.startDate }} </view>
+      <view class="sentence"> {{ item.content }} </view>
+      <view class="footer_item">
+        <image bindtap="share" class="share_class" src="../../images/index/share.png"></image>
+        <image bindtap="checkMessage" data-index='{{index}}' src="../../images/index/comments.png"></image>
+        <image bindtap="checkLikeFun" data-index='{{index}}' src="{{ item.isLike ? yesSrc : noSrc }}"></image>
+      </view>
+      <view class="footer_input" hidden='{{ !item.isComment }}'>
+        <form>
+          <input placeholder='来，一起聊聊你的想法' value='{{ inpValue }}' confirm-type="send" cursor-spacing="10" bindconfirm="search"></input>
+        </form>
+      </view>
+    </view>
+  </view>
+
+  <view class='home-loading'>
+    <l-loading show="{{ loadingShow }}" type="{{ loadingType }}" line="{{true}}"> </l-loading>
+  </view>
+
+  <view class='mask' hidden='{{ mask }}' catchtap="caleMask"></view>
+  <view class='show-class' style='bottom:{{ bottom }}'>
+    <view class='show-class-top'>
+      <text>分享至</text>
+      <span></span>
+    </view>
+    <view class='show-class-bot'>
+      <view class='show-class-item'>
+        <button open-type="share"><image src='../../images/index/wechatshare.png'></image></button>
+        <text>微信好友</text>
+      </view>
+    </view>
+  </view>
+</view>

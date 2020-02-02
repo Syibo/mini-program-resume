@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="title" style='padding-top:{{ btuBottom }}'>
+    <image bindtap="goBack" src="../../images/index/zhiwen.png"></image>
+    <image bindtap="goBack" class="nameimg" src="../../images/index/1429.png"></image>
+  </view>
+
+  <view class="content" style='margin-top:{{ statusBarHeight }}'>
+    <view class='top'>留言板</view>
+    <textarea bindinput="bindinput" value='{{ value }}' auto-focus class='text-cla' />
+    <view class='btn' bindtap='sublimt'>提交</view>
+  </view>
+</view>

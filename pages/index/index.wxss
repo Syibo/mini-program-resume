@@ -1,11 +1,44 @@
 /**index.wxss**/
+.first {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+  opacity: 1;
+  transition: .3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.activeFirst {
+  opacity: 0;
+  z-index: -1;
+}
+.first image {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 140rpx;
+  margin-top: 300rpx;
+}
+.first .first_name {
+  margin: 20rpx 0;
+  font-size: 36rpx;
+}
+.first .first_contnet {
+  margin-bottom: 10rpx;
+}
+.first button {
+  margin-top: 400rpx;
+}
 .title {
   height: 90rpx;
   width: 100%;
   position: fixed;
   left: 0;
   top: 0;
-  /* padding-top: 44px; */
   display: flex;
   align-items: center;
   padding-left: 30rpx;
@@ -15,8 +48,18 @@
   width: 62rpx;
   height: 62rpx;
 }
+.title .nameimg {
+  width: 142rpx;
+  height: 82rpx;
+  margin-left: 20rpx;
+  margin-top: 8rpx;
+}
 .con {
   margin-top: 188rpx;
+  display: none;
+}
+.is_show {
+  display: block
 }
 .top {
   height: 102rpx;
@@ -26,9 +69,14 @@
   align-items: center;
   background-color: rgb(243, 243, 243);
 }
-.top image {
+.top .head_img {
   width: 84rpx;
   height: 84rpx;
+  border-radius: 84rpx;
+}
+.top image {
+  width: 80rpx;
+  height: 80rpx;
 }
 .mid {
   width: 100%;
@@ -83,6 +131,7 @@
   margin-bottom: 9rpx;
 }
 .my .introduce {
+  text-indent: 2em;
   font-size: 32rpx;
   color: #010101;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -99,7 +148,7 @@
 }
 .line {
   width: 670rpx;
-  height: 1rpx;
+  height: 2rpx;
   background-color: #e6e6e6;
   margin: 0 auto;
 }
@@ -108,4 +157,130 @@
   font-weight: 400;
   font-size: 32rpx;
   padding: 50rpx 0;
+}
+.per-item {
+  margin-bottom: 20rpx;
+}
+.per-item .per-item-top {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 26rpx;
+  margin-bottom: 6rpx;
+}
+.per-item .per-item-bot {
+  color: #010101;
+  font-weight: normal;
+  font-size: 26rpx;
+}
+.canvas {
+  width: 335px;
+  height: 175px;
+  margin-left: -40rpx;
+}
+.skil-item {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+.skil-item image {
+  width: 80rpx;
+  height: 76rpx;
+  margin-right: 16rpx;
+}
+.skil-item .skil-cont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.skil-item .skil-cont .skil-name {
+  display: flex;
+  font-size: 28rpx;
+  color: #010101;
+  font-weight: 700;
+  margin: 10rpx 0;
+}
+.skil-item .skil-cont .skil-name .skil-name-left {
+  flex: 1
+}
+.skil-item .skil-line {
+  widows: 100%;
+  height: 10rpx;
+  background-color: #EEEEEE;
+}
+.skil-item .skil-line .gree {
+  display: block;
+  background-color: #c0e3e7;
+  height: 10rpx;
+}
+.more-skil {
+  margin-top: 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50rpx;
+}
+.more-skil image {
+  width: 70rpx;
+  height: 70rpx;
+  margin-right: 15rpx;
+  margin-bottom: 15rpx;
+}
+.int-cont {
+  background-color: white;
+  margin-bottom: 40rpx;
+}
+.int-cont .int-item {
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+  color: #010101;
+  font-weight: normal;
+  font-size: 28rpx;
+}
+.int-cont .int-item image {
+  width: 70rpx;
+  height: 70rpx;
+  margin-right: 25rpx;
+}
+.work-cont {
+  background-color: white;
+}
+.work-cont .work-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50rpx;
+}
+.work-cont .work-item .work-item-top {
+  display: flex;
+}
+.work-cont .work-item .work-item-top image {
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 20rpx;
+}
+.work-cont .work-item .work-item-top .work-item-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size:28rpx;
+  font-weight:500;
+  color:rgba(51,51,51,1);
+}
+.work-cont .work-item .work-item-top .work-item-name .work-item-name-top {
+  font-size:38rpx;
+  font-weight:bold;
+  color:rgba(51,51,51,1);
+} 
+.work-cont .work-item .work-item-top .work-item-name .work-item-name-mid {
+  font-size:32rpx;
+  font-weight:500;
+  color: #666;
+}
+.work-cont .work-item .work-item-bot {
+  color: #757575;
+  margin-top: 20rpx;
+  text-indent:2em;
+}
+.work-cont .work-item .work-item-bot span {
+  text-decoration: underline;
+  color: green;
 }

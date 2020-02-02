@@ -1,0 +1,133 @@
+.title {
+  height: 90rpx;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  padding-left: 30rpx;
+  background-color: white;
+}
+.title image {
+  width: 62rpx;
+  height: 62rpx;
+}
+.title .nameimg {
+  width: 142rpx;
+  height: 82rpx;
+  margin-left: 20rpx;
+  margin-top: 8rpx;
+}
+.content {
+  padding: 0 20rpx;
+}
+.content .music_item {
+  margin: 10rpx 0 30rpx 0;
+}
+.content .music_author {
+  display: flex;
+  margin-bottom: 10rpx;
+}
+.content .music_author image {
+  width: 76rpx;
+  height: 76rpx;
+  border-radius: 76rpx;
+}
+.content .music_author .author_right {
+  padding-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 24rpx;
+}
+.content .music_author .author_right .author_name {
+  font-size: 28rpx;
+  color: rgb(90, 124, 171);
+}
+
+.content .music_author .author_right .author_date {
+  color: rgb(153, 153, 153);
+}
+
+.music_bottom {
+  padding-left: 90rpx;
+}
+
+.music_bottom .img_view {
+  display: flex;
+  flex-wrap: wrap;
+}
+.music_content {
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+  color: rgb(51, 51, 52);
+}
+.music_img {
+  width: 190rpx;
+  height: 190rpx;
+  margin: 5rpx;
+  margin-bottom: 20rpx;
+}
+.music_play {
+  width: 100%;
+  height: 120rpx;
+  background-color:rgb(245, 245, 245);
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+}
+.music_play .music_left {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+}
+.music_play .music_left .bg_img {
+  position: absolute;
+  top: 0;
+  left: 10rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+.music_play .music_left .play_img {
+  width: 20rpx;
+  height: 20rpx;
+  position: absolute;
+  top: 40rpx;
+  left: 50rpx;
+}
+.music_play .music_left .music_opact {
+  position: absolute;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 60rpx;
+  top: 20rpx;
+  left: 30rpx;
+  background-color: #333;
+  opacity: 0.2;
+}
+
+.music_play .music_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20rpx;
+  font-size: 24rpx;
+}
+
+.music_play .music_info .music_name {
+  color: rgb(49, 49, 50);
+  font-size: 30rpx;
+}
+
+.music_play .music_info .music_player {
+  color: rgb(123, 123, 123);
+  margin-top: 6rpx;
+}
+
+.home-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

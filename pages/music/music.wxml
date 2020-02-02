@@ -1,0 +1,51 @@
+<view class="container">
+
+  <view class="title" style='padding-top:{{ btuBottom }}'>
+    <image bindtap="goBack" src="../../images/index/zhiwen.png"></image>
+    <image bindtap="goBack" class="nameimg" src="../../images/index/1429.png"></image>
+  </view>
+
+  <view class="content" style='margin-top:{{ statusBarHeight }}'>
+    <view class="music_item" wx:for="{{ musicData }}" wx:key="_id">
+      <view class="music_author">
+        <image src="../../images/index/headimg.jpg"></image>
+        <view class="author_right">
+          <view class="author_name">沈bb</view>
+          <view class="author_date">
+            {{ item.startDate }}
+          </view>
+        </view>
+      </view>
+
+      <view class="music_bottom">
+        <view class="music_content">
+         {{ item.content }}
+        </view>
+        
+        <view class="img_view">
+          <block wx:for="{{ item.img }}" wx:for-index="id" wx:for-item="img" wx:key="img">
+            <image mode="aspectFit" bindtap="previewImage" data-index="{{ index }}" data-img="{{ img }}" class="music_img" src="{{ img }}"></image>
+          </block>
+        </view>
+      
+        <view class="music_play">
+          <view class="music_left" bindtap="checkPlayMusic" data-index='{{index}}'>
+            <image class="bg_img" src="{{ item.songImg }}"></image>
+            <view class="music_opact"></view>
+            <image class="play_img" src="../../images/index/play.png"></image>
+          </view>
+          
+          <view class="music_info">
+            <view class="music_name">{{ item.song }}</view>
+            <view class="music_player">{{ item.name }}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='home-loading'>
+    <l-loading show="{{ loadingShow }}" type="{{ loadingType }}" line="{{true}}"> </l-loading>
+  </view>
+  
+</view>
