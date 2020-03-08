@@ -11,7 +11,7 @@
     <button hidden="{{ loginDiv }}" type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
   </view>
 
-  <view class="title" style='padding-top:{{ btuBottom }}'>
+  <view class="title {{ login ? 'is_op' : ''}}" style='padding-top:{{ btuBottom }}'>
     <image src="../../images/index/zhiwen.png"></image>
     <image class="nameimg" src="../../images/index/1429.png"></image>
   </view>
