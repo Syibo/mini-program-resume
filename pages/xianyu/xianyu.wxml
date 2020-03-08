@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="title" style='padding-top:{{ btuBottom }}'>
+    <image src="../../images/index/zhiwen.png" bindtap="goBack"></image>
+    <image class="nameimg" src="../../images/index/1429.png"></image>
+  </view>
+
+  <view class="con" style='margin-top:{{ statusBarHeight }}'>
+    <view class="biaot">
+      公司简介
+    </view>
+    <view class="introduce">
+      上海仙域是一家创业型互联网公司，主要产品是51点赞APP，类似于大众点评/如糖，提供达人探店，特价美食的本地生活服务服务 的一款APP，用户量20W+。
+    </view>
+    <view class="biaot" style="margin-top: 16rpx">项目介绍</view>
+    <view class="project">
+        <view class="project-name">
+          <text>51点赞微信公众号webapp</text>
+        </view>
+        <rich-text class="desc">
+          <view>项目链接：https://m.51dianzan.com</view>
+          <view>Vue+Vuex+Vue-Router+axios技术栈；接入微信JS-SDK实现微信授权登陆，转发，支付；H5页面使用支付宝支付，
+          使用高德地图api获取当前定位；获取高德H5地图路线；首页实现瀑布流布局。</view>
+        </rich-text>
+    </view>
+  </view>
+</view>

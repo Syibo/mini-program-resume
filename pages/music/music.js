@@ -27,7 +27,7 @@ Page({
   },
 
   inset() {
-    db.collection('music').get().then(res => {
+    db.collection('music').orderBy('timestamp', 'desc').get().then(res => {
       this.setData({
         musicData: res.data,
         loadingShow: true

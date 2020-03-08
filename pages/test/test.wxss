@@ -1,0 +1,7 @@
+/* pages/test/test.wxss */
+.container {
+  padding-top: 200rpx;
+}
+button {
+  margin-bottom: 10rpx;
+}

@@ -83,6 +83,20 @@
 					"id": -1,
 					"name": "发布",
 					"pathName": "pages/release/release",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/test/test",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/xianyu/xianyu",
+					"pathName": "pages/xianyu/xianyu",
 					"scene": null
 				}
 			]

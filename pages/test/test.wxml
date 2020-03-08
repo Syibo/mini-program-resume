@@ -1,0 +1,18 @@
+
+
+<view class="container">
+  <button bindtap="login">测试登录</button>
+  <button bindtap="yanz">验证token</button>
+  <button bindtap="getLast">获取最新一期</button>
+  <button bindtap="getNext">获取下一期</button>
+  <button bindtap="getPrev">获取上一期</button>
+  <button bindtap="onLike">点赞</button>
+  <button bindtap="onDisLike">取消点赞</button>
+
+
+  <button bindtap="getHOtList">获取热门书籍</button>
+  <button bindtap="getBookDetail">书籍详情</button>
+  <button bindtap="mohu">模糊搜索</button>
+
+
+</view>

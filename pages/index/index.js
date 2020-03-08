@@ -150,6 +150,36 @@ Page({
       url: '/pages/release/release',
     })
   },
+  goXianyu() {
+    wx.navigateTo({
+      url: '/pages/xianyu/xianyu',
+    })
+  },
+
+  KoaTest() {
+    wx.login({
+      success: (res) => {
+        if (res.code) {
+          wx.request({
+            url: 'http://localhost:3000/v1/token',
+            method: 'POST',
+            data: {
+              account: res.code,
+              type: 100
+            },
+            success: (res) => {
+              console.log(res.data)
+              const code = res.statusCode.toString()
+              if (code.startsWith('2')) {
+                wx.setStorageSync('token', res.data.token)
+              }
+            }
+          })
+        }
+      }
+    })
+  },
+
   onReady: function (e) {
     var windowWidth = 335;
     try {
@@ -202,7 +232,7 @@ Page({
         fontSize: 20
       },
       subtitle: {
-        name: 'UI Design',
+        name: 'App develop',
         color: '#666666',
         fontSize: 15,
         offsetX: 10

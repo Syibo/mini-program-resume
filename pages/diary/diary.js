@@ -28,7 +28,7 @@ Page({
   },
 
   inset() {
-    db.collection('diary').get().then( res => {
+    db.collection('diary').orderBy('timestamp', 'desc').get().then( res => {
       this.setData({
         diaryData: res.data,
         loadingShow: true

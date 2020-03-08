@@ -13,6 +13,33 @@
   flex-direction: column;
   align-items: center;
 }
+.big-circle{
+  background-color: rgba(0, 165, 34, 0.7);
+  width: 260px;
+  height: 260px;
+  border-radius: 130px;
+  position: absolute;
+  left: -150px;
+  top: 170px;
+}
+.medium-circle{
+  background-color: rgba(0, 165, 34, 0.7);
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+  position: absolute;
+  right: -80px;
+  top: 170px;
+}
+.small-circle{
+  background-color: rgba(0, 165, 34, 0.7);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: absolute;
+  left: -10px;
+  bottom: 110px;
+}
 .activeFirst {
   opacity: 0;
   z-index: -1;
@@ -283,4 +310,5 @@
 .work-cont .work-item .work-item-bot span {
   text-decoration: underline;
   color: green;
+  margin-top: 6rpx;
 }

@@ -5,7 +5,10 @@
     "pages/diary/diary",
     "pages/music/music",
     "pages/message/message",
-    "pages/release/release"
+    "pages/release/release",
+    "pages/test/test",
+    "pages/xianyu/xianyu",
+    "pages/nanhua/nanhua"
   ],
   "requiredBackgroundModes": [
     "audio",

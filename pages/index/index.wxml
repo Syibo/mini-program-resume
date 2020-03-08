@@ -3,6 +3,9 @@
   <view class="first {{ login ? 'activeFirst' : ''}}">
     <image src="{{ loginDiv ? avatarUrl : defaultimg }}"></image>
     <view class="first_name">{{ loginDiv ? nickName : '' }}</view>
+    <view class="big-circle"></view>
+    <view class="medium-circle"></view>
+    <view class="small-circle"></view>
     <view hidden="{{ loginDiv }}" class="first_contnet">有趣的灵魂</view>
     <view hidden="{{ loginDiv }}" class="first_contnet">终会相遇</view>
     <button hidden="{{ loginDiv }}" type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
@@ -24,8 +27,8 @@
 
     <view class="mid">
       <image src="../../images/index/headimg.jpg"></image>
-      <view class="name">Bob shen</view>
-      <view class="dist">UI designers | Web programmer</view>
+      <view bindtap="KoaTest" class="name">Bob shen</view>
+      <view class="dist">Web programmer | App development</view>
       <view class="info">
         <image src="../../images/index/wechat.png" bindtap="copyWechat"></image>
         <image bindtap="copyWechat" style="width: 60rpx;height: 60rpx;" src="../../images/index/iphone.png"></image>
@@ -38,7 +41,7 @@
     <view class="my">
       <view class="about"> About Me </view>
       <view class="hello"> Helo, 沈意波(Bob shen)! </view>
-      <view class="introduce"> 来自江西九江，本科就读于南昌大学共青学院计算机科学与技术专业，主要从事web前端开发与ui设计工作，是一位热衷代码，热爱生活的95后，此小程序用于个人介绍与分享生活，有兴趣可以点击上述小图标与我联系。</view>
+      <view class="introduce"> 来自江西九江，本科就读于南昌大学共青学院计算机科学与技术专业，主要从事前端开发工作，是一位热衷代码，热爱生活的95后，此小程序用于个人介绍与分享生活，有兴趣可以给我留言点击上述小图标与我联系。</view>
       <view class="signature">
         <image src="../../images/index/1429.png"></image>
       </view>
@@ -131,10 +134,10 @@
       </view>
 
       <view class="skil-item">
-        <image src="../../images/index/Webpack.png"></image>
+        <image src="../../images/index/typescript.png"></image>
         <view class="skil-cont">
           <view class="skil-name">
-            <view class="skil-name-left">Webpack</view>
+            <view class="skil-name-left">Typescript</view>
             <view>50%</view>
           </view>
           <view class="skil-line">
@@ -144,10 +147,10 @@
       </view>
       
       <view class="skil-item">
-        <image src="../../images/index/Ps.png"></image>
+        <image src="../../images/index/flutter.png"></image>
         <view class="skil-cont">
           <view class="skil-name">
-            <view class="skil-name-left">Photoshop</view>
+            <view class="skil-name-left">Flutter</view>
             <view>50%</view>
           </view>
           <view class="skil-line">
@@ -156,10 +159,10 @@
         </view>
       </view>
       <view class="skil-item">
-        <image src="../../images/index/sketch.png"></image>
+        <image src="../../images/index/dart.png"></image>
         <view class="skil-cont">
           <view class="skil-name">
-            <view class="skil-name-left">sketch</view>
+            <view class="skil-name-left">Dart</view>
             <view>50%</view>
           </view>
           <view class="skil-line">
@@ -192,10 +195,6 @@
           <image src="../../images/index/lol.png"></image>
           <text>英雄联盟</text>
         </view>
-        <!-- <view class="int-item">
-          <image style="width: 240rpx;height: 100rpx;" src="../../images/index/muke.png"></image>
-          <text>慕课网</text>
-        </view> -->
       </view>
 
       <view class="line"></view>
@@ -217,7 +216,7 @@
             <view>1. 负责IOS与安卓app内嵌页面的开发与交互。</view>
             <view>2. 负责微信公众号web站的开发与维护。</view>
             <view>3. 负责微信小程序端的开发与维护。</view>
-            <!-- <span>查看相关项目</span> -->
+            <span bindtap="goXianyu">查看相关项目</span>
           </view>
         </view>
 
@@ -237,7 +236,7 @@
             <view>1. 南华资本微信公众号的开发与维护。</view>
             <view>2. 官网以及一些其他网站的开发。</view>
             <view>3. 金融衍生品后台系统的开发。</view>
-            <!-- <span>查看相关项目</span> -->
+            <span>查看相关项目</span>
           </view>
         </view>
       </view>
