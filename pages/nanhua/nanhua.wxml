@@ -12,75 +12,36 @@
       浙江南华资本管理有限公司（以下简称“南华资本”）是由南华期货股份有限公司全资下设的经中国期货业协会批准成立的风险管理子公司，注册资金2.5亿元人民币，公司以服 务实体经济为宗旨，立足风险管理，深度服务产业客户。主要从事国内外大宗商品现货贸易等方面的服务工作，范围主要涵盖基差贸易、仓单服务、合作套保、场外衍生品业务、做市业务。
     </view>
     <view class="biaot" style="margin-top: 16rpx">项目介绍</view>
-    <view class="swiper-container">
-      <swiper circular="true" previous-margin="70rpx" next-margin="70rpx" current="1">
-        <!-- <block wx:for="{{background}}" wx:key="*this"> -->
-          <swiper-item>
-            <view class="swiper-item">
-              <view class="swiper-item-cont">
-                <image src="../../images/index/architecture1.png"></image>
-                <view style="padding: 30rpx">
-                  <view class="time">2017.7-2017.9</view>
-                  <view class="time1">‘易利权’网页</view>
-                  <view class="time3">1、使用vue-cli脚手架工具搭建项目环境;
-                                      2、使用基于vue2.0的element-ui框架;
-                                      3、组件化开发模式，切分项目中各个模块。
-                  </view>
-                  <view class="time2">查看项目</view>
-                </view>
-              </view>
-            </view>
-          </swiper-item>
-          <swiper-item>
-            <view class="swiper-item">
-              <view class="swiper-item-cont">
-                <image src="../../images/index/admin.png"></image>
-                <view style="padding: 30rpx">
-                  <view class="time">2017.7-2017.9</view>
-                  <view class="time1">金融衍生品后台系统</view>
-                  <view class="time3">1、使用vue-cli脚手架工具搭建项目环境;
-                                      2、使用基于vue2.0的element-ui框架;
-                                      3、组件化开发模式，切分项目中各个模块。
-                  </view>
-                  <view class="time2">查看项目</view>
-                </view>
-              </view>
-            </view>
-          </swiper-item>
-          <swiper-item>
-            <view class="swiper-item">
-              <view class="swiper-item-cont">
-                <image src="../../images/index/architecture1.png"></image>
-                <view style="padding: 30rpx">
-                  <view class="time">2017.7-2017.9</view>
-                  <view class="time1">南华资本官网</view>
-                  <view class="time3">1、使用vue-cli脚手架工具搭建项目环境;
-                                      2、使用基于vue2.0的element-ui框架;
-                                      3、组件化开发模式，切分项目中各个模块。
-                  </view>
-                  <view class="time2">查看项目</view>
-                </view>
-              </view>
-            </view>
-          </swiper-item>
-          <swiper-item>
-            <view class="swiper-item">
-              <view class="swiper-item-cont">
-                <image src="../../images/index/to-do-list.png"></image>
-                <view style="padding: 30rpx">
-                  <view class="time">2017.7-2017.9</view>
-                  <view class="time1">期货交易webapp</view>
-                  <view class="time3">1、使用vue-cli脚手架工具搭建项目环境;
-                                      2、使用基于vue2.0的element-ui框架;
-                                      3、组件化开发模式，切分项目中各个模块。
-                  </view>
-                  <view class="time2">查看项目</view>
-                </view>
-              </view>
-            </view>
-          </swiper-item>
-        <!-- </block> -->
-      </swiper>
+
+    <view class="project">
+      <view class="project-name">
+        <text>场外微信报价系统</text>
+      </view>
+      <rich-text class="desc">
+        <view>vue相关技术栈；</view>
+        <view>使用websocket协议对接期权交易所获取最新标的价格；</view>
+        <view>echart实时展示期权K 线图；</view>
+        <view>用js编写期权计算公式；</view>
+      </rich-text>
     </view>
+
+    <view class="project">
+      <view class="project-name">
+        <text>金属衍生品终端web系统</text>
+      </view>
+      <rich-text class="desc">
+        <view>vue+element;</view>
+      </rich-text>
+    </view>
+
+    <view class="project">
+      <view class="project-name">
+        <text>南华资本官网</text>
+      </view>
+      <rich-text class="desc">
+        <view>http://www.nanhuacapital.com;</view>
+      </rich-text>
+    </view>
+
   </view>
 </view>

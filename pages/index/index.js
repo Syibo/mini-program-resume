@@ -155,6 +155,11 @@ Page({
       url: '/pages/xianyu/xianyu',
     })
   },
+  goNanhua() {
+    wx.navigateTo({
+      url: '/pages/nanhua/nanhua',
+    })
+  },
 
   KoaTest() {
     wx.login({

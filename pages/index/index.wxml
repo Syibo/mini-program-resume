@@ -201,6 +201,26 @@
       <view class="personal">work experience</view>
 
       <view class="work-cont">
+
+        <view class="work-item">
+          <view class="work-item-top">
+            <image src="../../images/index/logo.png"></image>
+            <view class="work-item-name">
+              <view class="work-item-name-top">宁波比浮质量交付中心</view>
+              <view class="work-item-name-mid">2019.10.09-至今</view>
+              <view>前端负责人</view>
+            </view>
+          </view>
+          <view class="work-item-bot">
+            比孚公司致力于成为“最专业的测试技术服务合作伙伴”，公司追求更优的品质，更好的服务、更高的效率；公司主营业务覆盖了软件及游戏测试两大业务领域的各类测试服务
+            <view>主要职责：</view>
+            <view>1. 负责前端任务拆分，协调组员。</view>
+            <view>2. 负责与腾讯对接，了解最新需求。</view>
+            <view>3. 负责前端框架搭建。</view>
+            <span bindtap="goXianyu">查看相关项目</span>
+          </view>
+        </view>
+
         <view class="work-item">
           <view class="work-item-top">
             <image src="../../images/index/xianyu.png"></image>
@@ -236,7 +256,7 @@
             <view>1. 南华资本微信公众号的开发与维护。</view>
             <view>2. 官网以及一些其他网站的开发。</view>
             <view>3. 金融衍生品后台系统的开发。</view>
-            <span>查看相关项目</span>
+            <span bindtap="goNanhua">查看相关项目</span>
           </view>
         </view>
       </view>

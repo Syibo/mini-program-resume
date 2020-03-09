@@ -24,6 +24,16 @@
 .con {
   background-color: white;
 }
+.img_view {
+  display: flex;
+  flex-wrap: wrap;
+}
+.music_img {
+  width: 190rpx;
+  height: 190rpx;
+  margin: 5rpx;
+  margin-bottom: 20rpx;
+}
 .swiper-container {
   background-color: white;
   margin-bottom: 60rpx;

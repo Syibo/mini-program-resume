@@ -13,14 +13,68 @@
     </view>
     <view class="biaot" style="margin-top: 16rpx">项目介绍</view>
     <view class="project">
-        <view class="project-name">
-          <text>51点赞微信公众号webapp</text>
-        </view>
-        <rich-text class="desc">
-          <view>项目链接：https://m.51dianzan.com</view>
-          <view>Vue+Vuex+Vue-Router+axios技术栈；接入微信JS-SDK实现微信授权登陆，转发，支付；H5页面使用支付宝支付，
-          使用高德地图api获取当前定位；获取高德H5地图路线；首页实现瀑布流布局。</view>
-        </rich-text>
+      <view class="project-name">
+        <text>51点赞微信公众号webapp</text>
+      </view>
+      <rich-text class="desc">
+        <view>项目链接：https://m.51dianzan.com</view>
+        <view>Vue+Vuex+Vue-Router+axios技术栈</view>
+        <view>微信JS-SDK实现微信授权登陆，转发，支付</view>
+        <view>H5页面使用支付宝支付</view>
+        <view>使用高德地图api获取当前定位；地图路线</view>
+        <view>首页实现瀑布流布局。</view>
+      </rich-text>
+
+        <!-- <view class="img_view">
+          <block wx:for="{{ item.img }}" wx:for-index="id" wx:for-item="img" wx:key="img">
+            <image mode="aspectFit" bindtap="previewImage" data-index="{{ index }}" data-img="{{ img }}" class="music_img" src="{{ img }}"></image>
+          </block>
+        </view> -->
+        
     </view>
+
+    <view class="project">
+      <view class="project-name">
+        <text>51点赞后台管理系统</text>
+      </view>
+      <rich-text class="desc">
+        <view>vue+element(常规的CMS；没啥亮眼的技术)</view>
+      </rich-text>
+    </view>
+
+    <view class="project">
+      <view class="project-name">
+        <text>51点赞app</text>
+      </view>
+      <rich-text class="desc">
+        <view>主要负责app内嵌H5页面的展示，以及js和原生应用的交互</view>
+        <view>适配各种安卓机型与Iphone机型及Android，IOS版本；兼容web端</view>
+      </rich-text>
+    </view>
+
+    <view class="project">
+      <view class="project-name">
+        <text>51点赞服务号小程序</text>
+      </view>
+      <rich-text class="desc">
+        <view>负责开发，环境配置；上线部署；负责与后台接口联调</view>
+        <view>小程序原生语言开发；</view>
+        <view>小程序端手机号登陆；</view>
+        <view>小程序支付；分享；</view>
+        <view>封装瀑布流布局组件；</view>
+        <view>点赞，评论，收藏；回复等功能；</view>
+        <view>地图api使用；</view>
+      </rich-text>
+    </view>
+
+    <view class="project">
+      <view class="project-name">
+        <text>51点赞商户端小程序</text>
+      </view>
+      <rich-text class="desc">
+        <view>图片上传功能；</view>
+      </rich-text>
+    </view>
+
   </view>
 </view>

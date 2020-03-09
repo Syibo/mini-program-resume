@@ -9,6 +9,11 @@ Page({
     btuBottom: 0,
     statusBarHeight: 0,
     background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
+    img1: [
+      "../../images/xianyu/1.png",
+      "../../images/xianyu/2.png",
+      "../../images/xianyu/3.png",
+    ]
   },
 
   /**
@@ -22,6 +27,18 @@ Page({
   },
   goBack() {
     wx.navigateBack()
+  },
+
+  previewImage(e) {
+    let img = e.currentTarget.dataset.src;
+    let index = e.currentTarget.dataset.index;
+    console.log(e)
+    console.log(img)
+    console.log(index)
+    wx.previewImage({
+      current: img,
+      urls: this.img1[index]
+    })
   },
 
   /**

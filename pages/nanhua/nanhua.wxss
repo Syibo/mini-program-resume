@@ -24,6 +24,16 @@
 .con {
   background-color: white;
 }
+.img_view {
+  display: flex;
+  flex-wrap: wrap;
+}
+.music_img {
+  width: 190rpx;
+  height: 190rpx;
+  margin: 5rpx;
+  margin-bottom: 20rpx;
+}
 .swiper-container {
   background-color: white;
   margin-bottom: 60rpx;
@@ -45,7 +55,7 @@
   font-size: 40rpx;
   font-weight: 700;
   color: #010101;
-  padding: 0 0 30rpx 30rpx;
+  padding: 0 0 0 30rpx;
 }
 .introduce {
   text-indent: 2em;
@@ -101,4 +111,17 @@ swiper-item {
   text-transform: uppercase;
   padding: 20rpx 48rpx;
   margin-top: 30rpx;
+}
+
+.project{
+  border-bottom: dashed 1px #999;
+  padding: 30rpx;
+}
+.project-name{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.desc{
+  color: #999;
+  line-height: 1.5;
 }

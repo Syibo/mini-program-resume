@@ -97,6 +97,13 @@
 					"id": -1,
 					"name": "pages/xianyu/xianyu",
 					"pathName": "pages/xianyu/xianyu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/nanhua/nanhua",
+					"pathName": "pages/nanhua/nanhua",
 					"scene": null
 				}
 			]
